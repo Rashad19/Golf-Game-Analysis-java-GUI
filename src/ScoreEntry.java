@@ -14,6 +14,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
   JButton btn;
 
+  JButton goBack;
+
   JSpinner spinner1;
   JSpinner spinner2;
   JSpinner spinner3;
@@ -35,6 +37,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
   int totalScore = 0;
   String date;
+
+  String course;
 
   ScoreEntry(String course, String date){
 
@@ -62,6 +66,7 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     this.date = date;
 
+    this.course = course;
 
 
 
@@ -84,6 +89,10 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     String label = "Enter your Score for: ";
 
+    label = label.concat(course);
+
+    label = label.concat(" ");
+
     JLabel label_date = new JLabel(label.concat(date));
 
     panel_date_declar.add(label_date);
@@ -93,6 +102,11 @@ public class ScoreEntry extends JFrame implements ActionListener {
     button_panel.add(btn);
 
     btn.addActionListener(this);
+
+    goBack = new JButton("Go back to Homepage");
+    button_panel.add(goBack);
+
+    goBack.addActionListener(this);
 
 
 
@@ -493,12 +507,17 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     this.dispose();
 
-    new DisplayScore(total_score, date);
+    new DisplayScore(total_score, date, course);
 
 
 
 
 
+    }
+
+    if(e.getSource() == goBack){
+      this.dispose();
+      new MainFrame();
     }
 
 

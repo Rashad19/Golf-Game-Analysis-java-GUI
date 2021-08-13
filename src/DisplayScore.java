@@ -7,7 +7,7 @@ public class DisplayScore extends JFrame implements ActionListener {
 
   JButton btn;
 
-  DisplayScore(int score, String date) {
+  DisplayScore(int score, String date, String course) {
 
     this.setTitle("Round Summary");
 
@@ -21,7 +21,13 @@ public class DisplayScore extends JFrame implements ActionListener {
     JPanel panel = new JPanel();
     panel.setLayout( new GridLayout(3,1));
 
-    String message = "Round Played on: ";
+    String message = "Round Played: ";
+
+    message = message.concat(course);
+
+    message = message.concat(" ");
+
+
 
     JLabel label_message = new JLabel(message.concat(date));
 
