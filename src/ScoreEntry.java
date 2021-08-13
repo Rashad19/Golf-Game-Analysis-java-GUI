@@ -151,6 +151,10 @@ public class ScoreEntry extends JFrame implements ActionListener {
     this.setResizable(false);
     this.getContentPane().setBackground( new Color(0xFFFFFF));
 
+    JLabel number_putts_label = new JLabel("Putts:", SwingConstants.CENTER);
+
+    JLabel number_putts_label1 = new JLabel("Putts:", SwingConstants.CENTER);
+
     JLabel fw_label = new JLabel("FW:", SwingConstants.CENTER);
 
     JLabel gir_label = new JLabel("GIR:", SwingConstants.CENTER);
@@ -158,6 +162,16 @@ public class ScoreEntry extends JFrame implements ActionListener {
     JLabel fw_label1 = new JLabel("FW:", SwingConstants.CENTER);
 
     JLabel gir_label1 = new JLabel("GIR:", SwingConstants.CENTER);
+
+    JPanel panel_number_putts = new JPanel();
+    panel_number_putts.setLayout( new GridLayout(1,10));
+    panel_number_putts.add(number_putts_label);
+
+    JPanel panel_number_putts1 = new JPanel();
+    panel_number_putts1.setLayout( new GridLayout(1,10));
+    panel_number_putts1.add(number_putts_label1);
+
+
 
     JPanel panel_fw_hit = new JPanel();
 
@@ -780,6 +794,138 @@ public class ScoreEntry extends JFrame implements ActionListener {
     }
 
 
+    panel_gir_hit.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+
+    String[] gir_option_array = {"hit", "miss right", "miss left", "miss short", "miss long"};
+
+    gir_box1 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit.add(gir_box1);
+    gir_box2 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit.add(gir_box2);
+    gir_box3 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit.add(gir_box3);
+    gir_box4 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit.add(gir_box4);
+    gir_box5 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit.add(gir_box5);
+    gir_box6 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit.add(gir_box6);
+    gir_box7 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit.add(gir_box7);
+    gir_box8 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit.add(gir_box8);
+    gir_box9 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit.add(gir_box9);
+
+
+    panel_gir_hit1.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+
+    gir_box10 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit1.add(gir_box10);
+    gir_box11 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit1.add(gir_box11);
+    gir_box12 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit1.add(gir_box12);
+    gir_box13 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit1.add(gir_box13);
+    gir_box14 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit1.add(gir_box14);
+    gir_box15 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit1.add(gir_box15);
+    gir_box16 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit1.add(gir_box16);
+    gir_box17 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit1.add(gir_box17);
+    gir_box18 = new JComboBox<String>(gir_option_array);
+    panel_gir_hit1.add(gir_box18);
+
+
+    panel_number_putts.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+
+
+
+    SpinnerModel model_putts1 = new SpinnerNumberModel(2,0,4,1);
+    number_putts1 = new JSpinner(model_putts1);
+    panel_number_putts.add(number_putts1);
+
+    SpinnerModel model_putts2 = new SpinnerNumberModel(2,0,4,1);
+    number_putts2 = new JSpinner(model_putts2);
+    panel_number_putts.add(number_putts2);
+
+    SpinnerModel model_putts3 = new SpinnerNumberModel(2,0,4,1);
+    number_putts3 = new JSpinner(model_putts3);
+    panel_number_putts.add(number_putts3);
+
+    SpinnerModel model_putts4 = new SpinnerNumberModel(2,0,4,1);
+    number_putts4 = new JSpinner(model_putts4);
+    panel_number_putts.add(number_putts4);
+
+    SpinnerModel model_putts5 = new SpinnerNumberModel(2,0,4,1);
+    number_putts5 = new JSpinner(model_putts5);
+    panel_number_putts.add(number_putts5);
+
+    SpinnerModel model_putts6 = new SpinnerNumberModel(2,0,4,1);
+    number_putts6 = new JSpinner(model_putts6);
+    panel_number_putts.add(number_putts6);
+
+    SpinnerModel model_putts7 = new SpinnerNumberModel(2,0,4,1);
+    number_putts7 = new JSpinner(model_putts7);
+    panel_number_putts.add(number_putts7);
+
+    SpinnerModel model_putts8 = new SpinnerNumberModel(2,0,4,1);
+    number_putts8 = new JSpinner(model_putts8);
+    panel_number_putts.add(number_putts8);
+
+    SpinnerModel model_putts9 = new SpinnerNumberModel(2,0,4,1);
+    number_putts9 = new JSpinner(model_putts9);
+    panel_number_putts.add(number_putts9);
+
+
+    panel_number_putts1.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+
+    SpinnerModel model_putts10 = new SpinnerNumberModel(2,0,4,1);
+    number_putts10 = new JSpinner(model_putts10);
+    panel_number_putts1.add(number_putts10);
+
+    SpinnerModel model_putts11 = new SpinnerNumberModel(2,0,4,1);
+    number_putts11 = new JSpinner(model_putts11);
+    panel_number_putts1.add(number_putts11);
+
+    SpinnerModel model_putts12 = new SpinnerNumberModel(2,0,4,1);
+    number_putts12 = new JSpinner(model_putts12);
+    panel_number_putts1.add(number_putts12);
+
+    SpinnerModel model_putts13 = new SpinnerNumberModel(2,0,4,1);
+    number_putts13 = new JSpinner(model_putts13);
+    panel_number_putts1.add(number_putts13);
+
+    SpinnerModel model_putts14 = new SpinnerNumberModel(2,0,4,1);
+    number_putts14 = new JSpinner(model_putts14);
+    panel_number_putts1.add(number_putts14);
+
+    SpinnerModel model_putts15 = new SpinnerNumberModel(2,0,4,1);
+    number_putts15 = new JSpinner(model_putts15);
+    panel_number_putts1.add(number_putts15);
+
+    SpinnerModel model_putts16 = new SpinnerNumberModel(2,0,4,1);
+    number_putts16 = new JSpinner(model_putts16);
+    panel_number_putts1.add(number_putts16);
+
+    SpinnerModel model_putts17 = new SpinnerNumberModel(2,0,4,1);
+    number_putts17 = new JSpinner(model_putts17);
+    panel_number_putts1.add(number_putts17);
+
+    SpinnerModel model_putts18 = new SpinnerNumberModel(2,0,4,1);
+    number_putts18 = new JSpinner(model_putts18);
+    panel_number_putts1.add(number_putts18);
+
+
+
+
+
+
+
+
 
 
 
@@ -849,10 +995,12 @@ public class ScoreEntry extends JFrame implements ActionListener {
     this.add(panel_score_entry);
     this.add(panel_fw_hit);
     this.add(panel_gir_hit);
+    this.add(panel_number_putts);
     this.add(panel_hole);
     this.add(panel_score_entry1);
     this.add(panel_fw_hit1);
     this.add(panel_gir_hit1);
+    this.add(panel_number_putts1);
     this.add(button_panel);
 
 
