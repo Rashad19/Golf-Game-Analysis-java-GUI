@@ -35,6 +35,73 @@ public class ScoreEntry extends JFrame implements ActionListener {
   JSpinner spinner17;
   JSpinner spinner18;
 
+
+  JSpinner number_putts1;
+  JSpinner number_putts2;
+  JSpinner number_putts3;
+  JSpinner number_putts4;
+  JSpinner number_putts5;
+  JSpinner number_putts6;
+  JSpinner number_putts7;
+  JSpinner number_putts8;
+  JSpinner number_putts9;
+  JSpinner number_putts10;
+  JSpinner number_putts11;
+  JSpinner number_putts12;
+  JSpinner number_putts13;
+  JSpinner number_putts14;
+  JSpinner number_putts15;
+  JSpinner number_putts16;
+  JSpinner number_putts17;
+  JSpinner number_putts18;
+
+  JComboBox fw_box1;
+  JComboBox fw_box2;
+  JComboBox fw_box3;
+  JComboBox fw_box4;
+  JComboBox fw_box5;
+  JComboBox fw_box6;
+  JComboBox fw_box7;
+  JComboBox fw_box8;
+  JComboBox fw_box9;
+  JComboBox fw_box10;
+  JComboBox fw_box11;
+  JComboBox fw_box12;
+  JComboBox fw_box13;
+  JComboBox fw_box14;
+  JComboBox fw_box15;
+  JComboBox fw_box16;
+  JComboBox fw_box17;
+  JComboBox fw_box18;
+
+  JComboBox gir_box1;
+  JComboBox gir_box2;
+  JComboBox gir_box3;
+  JComboBox gir_box4;
+  JComboBox gir_box5;
+  JComboBox gir_box6;
+  JComboBox gir_box7;
+  JComboBox gir_box8;
+  JComboBox gir_box9;
+  JComboBox gir_box10;
+  JComboBox gir_box11;
+  JComboBox gir_box12;
+  JComboBox gir_box13;
+  JComboBox gir_box14;
+  JComboBox gir_box15;
+  JComboBox gir_box16;
+  JComboBox gir_box17;
+  JComboBox gir_box18;
+
+
+
+
+
+
+
+
+
+
   int totalScore = 0;
   String date;
 
@@ -83,6 +150,38 @@ public class ScoreEntry extends JFrame implements ActionListener {
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.setResizable(false);
     this.getContentPane().setBackground( new Color(0xFFFFFF));
+
+    JLabel fw_label = new JLabel("FW:", SwingConstants.CENTER);
+
+    JLabel gir_label = new JLabel("GIR:", SwingConstants.CENTER);
+
+    JLabel fw_label1 = new JLabel("FW:", SwingConstants.CENTER);
+
+    JLabel gir_label1 = new JLabel("GIR:", SwingConstants.CENTER);
+
+    JPanel panel_fw_hit = new JPanel();
+
+    panel_fw_hit.setLayout( new GridLayout(1,10));
+
+    panel_fw_hit.add(fw_label);
+
+    JPanel panel_fw_hit1 = new JPanel();
+
+    panel_fw_hit1.setLayout( new GridLayout(1,10));
+
+    panel_fw_hit1.add(fw_label1);
+
+    JPanel panel_gir_hit = new JPanel();
+
+    panel_gir_hit.setLayout( new GridLayout(1,10));
+
+    panel_gir_hit.add(gir_label);
+
+    JPanel panel_gir_hit1 = new JPanel();
+
+    panel_gir_hit1.setLayout( new GridLayout(1,10));
+
+    panel_gir_hit1.add(gir_label1);
 
 
     JPanel panel_date_declar = new JPanel();
@@ -340,6 +439,12 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
 
 
+
+
+
+
+
+
     JLabel label_score1 = new JLabel("Score:", SwingConstants.CENTER);
     SpinnerModel model1 = new SpinnerNumberModel(par1,1,14,1);
     spinner1 = new JSpinner(model1);
@@ -394,6 +499,285 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     SpinnerModel model18 = new SpinnerNumberModel(par18,1,14,1);
     spinner18 = new JSpinner(model18);
+
+
+    panel_fw_hit.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+
+    String[] fw_options_array = {"hit","miss right","miss left"};
+
+    String[] fw_par3 = {"-"};
+
+
+
+    if(par1 >= 4) {
+
+      fw_box1 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit.add(fw_box1);
+
+    }
+    else{
+
+      fw_box1 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit.add(fw_box1);
+
+    }
+
+    if(par2 >= 4){
+
+      fw_box2 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit.add(fw_box2);
+
+    }
+    else{
+
+      fw_box2 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit.add(fw_box2);
+
+    }
+
+    if(par3 >= 4){
+
+      fw_box3 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit.add(fw_box3);
+
+    }
+    else{
+
+      fw_box3 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit.add(fw_box3);
+
+    }
+
+    if(par4 >= 4){
+
+      fw_box4 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit.add(fw_box4);
+
+    }
+    else{
+
+      fw_box4 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit.add(fw_box4);
+
+    }
+
+    if(par5 >= 4){
+
+      fw_box5 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit.add(fw_box5);
+
+    }
+    else{
+
+      fw_box5 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit.add(fw_box5);
+
+    }
+
+    if(par6 >= 4){
+
+      fw_box6 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit.add(fw_box6);
+
+    }
+    else{
+
+      fw_box6 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit.add(fw_box6);
+
+    }
+
+    if(par7 >= 4){
+
+      fw_box7 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit.add(fw_box7);
+
+    }
+    else{
+
+      fw_box7 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit.add(fw_box7);
+
+    }
+
+    if(par8 >= 4){
+
+      fw_box8 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit.add(fw_box8);
+
+    }
+    else{
+
+      fw_box8 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit.add(fw_box8);
+
+    }
+
+    if(par9 >= 4){
+
+      fw_box9 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit.add(fw_box9);
+
+    }
+    else{
+
+      fw_box9 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit.add(fw_box9);
+
+    }
+
+    if(par10 >= 4){
+
+      fw_box10 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit1.add(fw_box10);
+
+    }
+    else{
+
+      fw_box10 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit1.add(fw_box10);
+
+    }
+
+    if(par11 >= 4){
+
+      fw_box11 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit1.add(fw_box11);
+
+    }
+    else{
+
+      fw_box11 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit1.add(fw_box11);
+
+    }
+
+    if(par12 >= 4){
+
+      fw_box12 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit1.add(fw_box12);
+
+    }
+    else{
+
+      fw_box12 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit1.add(fw_box12);
+
+    }
+
+    if(par13 >= 4){
+
+      fw_box13 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit1.add(fw_box13);
+
+    }
+    else{
+
+      fw_box13 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit1.add(fw_box13);
+
+    }
+
+    if(par14 >= 4){
+
+      fw_box14 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit1.add(fw_box14);
+
+    }
+    else{
+
+      fw_box14 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit1.add(fw_box14);
+
+    }
+
+    if(par15 >= 4){
+
+      fw_box15 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit1.add(fw_box15);
+
+    }
+    else{
+
+      fw_box15 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit1.add(fw_box15);
+
+    }
+
+    if(par16 >= 4){
+
+      fw_box16 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit1.add(fw_box16);
+
+    }
+    else{
+
+      fw_box16 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit1.add(fw_box16);
+
+    }
+
+    if(par17 >= 4){
+
+      fw_box17 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit1.add(fw_box17);
+
+    }
+    else{
+
+      fw_box17 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit1.add(fw_box17);
+
+    }
+
+    if(par18 >= 4){
+
+      fw_box18 = new JComboBox<String>(fw_options_array);
+
+      panel_fw_hit1.add(fw_box18);
+
+    }
+    else{
+
+      fw_box18 = new JComboBox<String>(fw_par3);
+
+      panel_fw_hit1.add(fw_box18);
+
+    }
 
 
 
@@ -457,12 +841,20 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
 
 
+
+
+
     this.add(label_date);
     this.add(panel_hole_num1);
     this.add(panel_score_entry);
+    this.add(panel_fw_hit);
+    this.add(panel_gir_hit);
     this.add(panel_hole);
     this.add(panel_score_entry1);
+    this.add(panel_fw_hit1);
+    this.add(panel_gir_hit1);
     this.add(button_panel);
+
 
 
 
