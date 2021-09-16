@@ -96,7 +96,7 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
 
 
-
+  int Total_fw;
 
 
 
@@ -527,6 +527,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
       fw_box1 = new JComboBox<String>(fw_options_array);
 
+      this.Total_fw += 1;
+
       panel_fw_hit.add(fw_box1);
 
     }
@@ -539,6 +541,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
     }
 
     if(par2 >= 4){
+
+      this.Total_fw += 1;
 
       fw_box2 = new JComboBox<String>(fw_options_array);
 
@@ -555,6 +559,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     if(par3 >= 4){
 
+      this.Total_fw += 1;
+
       fw_box3 = new JComboBox<String>(fw_options_array);
 
       panel_fw_hit.add(fw_box3);
@@ -569,6 +575,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
     }
 
     if(par4 >= 4){
+
+      this.Total_fw += 1;
 
       fw_box4 = new JComboBox<String>(fw_options_array);
 
@@ -585,6 +593,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     if(par5 >= 4){
 
+      this.Total_fw += 1;
+
       fw_box5 = new JComboBox<String>(fw_options_array);
 
       panel_fw_hit.add(fw_box5);
@@ -599,6 +609,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
     }
 
     if(par6 >= 4){
+
+      this.Total_fw += 1;
 
       fw_box6 = new JComboBox<String>(fw_options_array);
 
@@ -615,6 +627,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     if(par7 >= 4){
 
+      this.Total_fw += 1;
+
       fw_box7 = new JComboBox<String>(fw_options_array);
 
       panel_fw_hit.add(fw_box7);
@@ -629,6 +643,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
     }
 
     if(par8 >= 4){
+
+      this.Total_fw += 1;
 
       fw_box8 = new JComboBox<String>(fw_options_array);
 
@@ -645,6 +661,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     if(par9 >= 4){
 
+      this.Total_fw += 1;
+
       fw_box9 = new JComboBox<String>(fw_options_array);
 
       panel_fw_hit.add(fw_box9);
@@ -659,6 +677,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
     }
 
     if(par10 >= 4){
+
+      this.Total_fw += 1;
 
       fw_box10 = new JComboBox<String>(fw_options_array);
 
@@ -675,6 +695,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     if(par11 >= 4){
 
+      this.Total_fw += 1;
+
       fw_box11 = new JComboBox<String>(fw_options_array);
 
       panel_fw_hit1.add(fw_box11);
@@ -689,6 +711,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
     }
 
     if(par12 >= 4){
+
+      this.Total_fw += 1;
 
       fw_box12 = new JComboBox<String>(fw_options_array);
 
@@ -705,6 +729,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     if(par13 >= 4){
 
+      this.Total_fw += 1;
+
       fw_box13 = new JComboBox<String>(fw_options_array);
 
       panel_fw_hit1.add(fw_box13);
@@ -719,6 +745,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
     }
 
     if(par14 >= 4){
+
+      this.Total_fw += 1;
 
       fw_box14 = new JComboBox<String>(fw_options_array);
 
@@ -735,6 +763,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     if(par15 >= 4){
 
+      this.Total_fw += 1;
+
       fw_box15 = new JComboBox<String>(fw_options_array);
 
       panel_fw_hit1.add(fw_box15);
@@ -749,6 +779,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
     }
 
     if(par16 >= 4){
+
+      this.Total_fw += 1;
 
       fw_box16 = new JComboBox<String>(fw_options_array);
 
@@ -765,6 +797,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     if(par17 >= 4){
 
+      this.Total_fw += 1;
+
       fw_box17 = new JComboBox<String>(fw_options_array);
 
       panel_fw_hit1.add(fw_box17);
@@ -779,6 +813,8 @@ public class ScoreEntry extends JFrame implements ActionListener {
     }
 
     if(par18 >= 4){
+
+      this.Total_fw += 1;
 
       fw_box18 = new JComboBox<String>(fw_options_array);
 
@@ -1021,33 +1057,443 @@ public class ScoreEntry extends JFrame implements ActionListener {
 
     if(e.getSource() == btn){
 
+     int front_nine_score = 0;
+     int back_nine_score = 0;
+
      int score_1 = (Integer) spinner1.getValue();
+     front_nine_score += score_1;
      int score_2 = (Integer) spinner2.getValue();
+     front_nine_score += score_2;
      int score_3 = (Integer) spinner3.getValue();
+     front_nine_score += score_3;
      int score_4 = (Integer) spinner4.getValue();
+     front_nine_score += score_4;
      int score_5 = (Integer) spinner5.getValue();
+     front_nine_score += score_5;
      int score_6 = (Integer) spinner6.getValue();
+     front_nine_score += score_6;
      int score_7 = (Integer) spinner7.getValue();
+     front_nine_score += score_7;
      int score_8 = (Integer) spinner8.getValue();
+     front_nine_score += score_8;
      int score_9 = (Integer) spinner9.getValue();
+     front_nine_score += score_9;
+
      int score_10 = (Integer) spinner10.getValue();
+     back_nine_score += score_10;
      int score_11 = (Integer) spinner11.getValue();
+     back_nine_score += score_11;
      int score_12 = (Integer) spinner12.getValue();
+     back_nine_score += score_12;
      int score_13 = (Integer) spinner13.getValue();
+     back_nine_score += score_13;
      int score_14 = (Integer) spinner14.getValue();
+     back_nine_score += score_14;
      int score_15 = (Integer) spinner15.getValue();
+     back_nine_score += score_15;
      int score_16 = (Integer) spinner16.getValue();
+     back_nine_score += score_16;
      int score_17 = (Integer) spinner17.getValue();
+     back_nine_score += score_17;
      int score_18 = (Integer) spinner18.getValue();
+     back_nine_score += score_18;
 
 
-     int total_score = Integer.sum(score_1,score_2) + Integer.sum(score_3,score_4) + Integer.sum(score_5,score_6) + Integer.sum(score_7,score_8) + Integer.sum(score_9,score_10) + Integer.sum(score_11,score_12) + Integer.sum(score_13,score_14) + Integer.sum(score_15,score_16) + Integer.sum(score_17,score_18) ;
+     int total_score = front_nine_score + back_nine_score ;
+
+     int total_putts = 0;
+     int putts1 = (Integer) number_putts1.getValue();
+     total_putts += putts1;
+     int putts2 = (Integer) number_putts2.getValue();
+     total_putts += putts2;
+     int putts3 = (Integer) number_putts3.getValue();
+     total_putts += putts3;
+     int putts4 = (Integer) number_putts4.getValue();
+     total_putts += putts4;
+     int putts5 = (Integer) number_putts5.getValue();
+     total_putts += putts5;
+     int putts6 = (Integer) number_putts6.getValue();
+     total_putts += putts6;
+     int putts7 = (Integer) number_putts7.getValue();
+     total_putts += putts7;
+     int putts8 = (Integer) number_putts8.getValue();
+     total_putts += putts8;
+     int putts9 = (Integer) number_putts9.getValue();
+     total_putts += putts9;
+     int putts10 = (Integer) number_putts10.getValue();
+     total_putts += putts10;
+     int putts11 = (Integer) number_putts11.getValue();
+     total_putts += putts11;
+     int putts12 = (Integer) number_putts12.getValue();
+     total_putts += putts12;
+     int putts13 = (Integer) number_putts13.getValue();
+     total_putts += putts13;
+     int putts14 = (Integer) number_putts14.getValue();
+     total_putts += putts14;
+     int putts15 = (Integer) number_putts15.getValue();
+     total_putts += putts15;
+     int putts16 = (Integer) number_putts16.getValue();
+     total_putts += putts16;
+     int putts17 = (Integer) number_putts17.getValue();
+     total_putts += putts17;
+     int putts18 = (Integer) number_putts18.getValue();
+     total_putts += putts18;
+
+     int Total_hit_fw = 0;
+     int Total_miss_fw_right = 0;
+     int Total_miss_fw_left = 0;
+
+     int Total_hit_gir = 0;
+     int Total_miss_gir_right = 0;
+     int Total_miss_gir_left = 0;
+     int Total_miss_gir_short = 0;
+     int Total_miss_gir_long = 0;
+
+     if(fw_box1.getSelectedItem().toString() == "hit")
+       Total_hit_fw += 1;
+     else if(fw_box1.getSelectedItem().toString() == "miss right")
+       Total_miss_fw_right += 1;
+     else if(fw_box1.getSelectedItem().toString() == "miss left")
+       Total_miss_fw_left += 1;
+
+      if(fw_box2.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box2.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box2.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box3.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box3.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box3.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box4.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box4.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box4.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box5.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box5.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box5.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box6.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box6.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box6.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box7.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box7.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box7.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box8.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box8.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box8.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box9.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box9.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box9.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box10.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box10.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box10.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box11.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box11.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box11.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box12.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box12.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box12.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box13.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box13.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box13.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box14.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box14.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box14.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box15.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box15.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box15.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box16.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box16.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box16.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box17.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box17.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box17.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      if(fw_box18.getSelectedItem().toString() == "hit")
+        Total_hit_fw += 1;
+      else if(fw_box18.getSelectedItem().toString() == "miss right")
+        Total_miss_fw_right += 1;
+      else if(fw_box18.getSelectedItem().toString() == "miss left")
+        Total_miss_fw_left += 1;
+
+      double percentage_fw_hit = ((double) Total_hit_fw/Total_fw)*100;
+      double percentage_fw_miss_right = ((double)Total_miss_fw_right/Total_fw)*100;
+      double percentage_fw_miss_left = ((double) Total_miss_fw_left/Total_fw)*100;
 
 
 
-    this.dispose();
+      if(gir_box1.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box1.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box1.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box1.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
 
-    new DisplayScore(total_score, date, course);
+      if(gir_box2.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box2.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box2.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box2.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box3.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box3.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box3.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box3.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box4.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box4.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box4.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box4.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box5.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box5.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box5.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box5.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box6.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box6.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box6.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box6.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box7.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box7.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box7.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box7.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box8.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box8.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box8.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box8.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box9.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box9.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box9.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box9.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box10.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box10.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box10.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box10.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box11.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box11.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box11.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box11.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box12.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box12.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box12.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box12.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box13.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box13.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box13.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box13.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box14.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box14.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box14.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box14.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box15.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box15.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box15.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box15.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box16.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box16.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box16.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box16.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box17.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box17.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box17.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box17.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+      if(gir_box18.getSelectedItem().toString() == "hit")
+        Total_hit_gir += 1;
+      else if(gir_box18.getSelectedItem().toString() == "miss right")
+        Total_miss_gir_right += 1;
+      else if(gir_box18.getSelectedItem().toString() == "miss left")
+        Total_miss_gir_left += 1;
+      else if(gir_box18.getSelectedItem().toString() == "miss long")
+        Total_miss_gir_long += 1;
+      else
+        Total_miss_gir_short += 1;
+
+
+
+      double percentage_gir_hit = ((double)Total_hit_gir/18)*100;
+      double percentage_gir_miss_right = ((double) Total_miss_gir_right/18)*100;
+      double percentage_gir_miss_left = ((double)Total_miss_gir_left/18)*100;
+      double percentage_gir_miss_short = ((double)Total_miss_gir_short/18)*100;
+      double percentage_gir_miss_long = ((double) Total_miss_gir_long/18)*100;
+
+
+
+
+
+     this.dispose();
+
+     new DisplayScore(total_score,front_nine_score, back_nine_score,percentage_fw_hit,percentage_fw_miss_right, percentage_fw_miss_left,percentage_gir_hit, percentage_gir_miss_left, percentage_gir_miss_right, percentage_gir_miss_long, percentage_gir_miss_short, total_putts, date, course);
 
 
 
