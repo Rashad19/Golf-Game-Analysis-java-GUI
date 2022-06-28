@@ -13,5 +13,5 @@ Current Built-in golf courses are:
 To run this Desktop GUI:
 
 1. compile the java files in the root directory (src) by running javac *.java
-2. run the Main.java file by running java Main
+2. execute the Main.java file by running java Main
 
